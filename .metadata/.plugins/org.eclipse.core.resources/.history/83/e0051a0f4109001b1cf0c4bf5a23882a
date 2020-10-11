@@ -1,0 +1,24 @@
+
+public class Ques3 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			int i,rem,a=0,k,sum;
+			for(i=2;i<=500;i++)
+			{
+				sum=0;
+				k=i;
+				while(k>0)
+				{
+					rem=k%10;
+					k=k/10;
+					a=rem*rem*rem;
+					sum=sum+a;
+				}
+				if(sum==i)
+				{
+					System.out.println(i + " ");
+				}
+			}
+	}
+
+}
